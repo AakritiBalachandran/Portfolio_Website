@@ -8,7 +8,7 @@
 
 <br>
 
-[![Live Site](https://img.shields.io/badge/LIVE_SITE-333333?style=for-the-badge)](https://aakritibalachandran.github.io/aakriti-portfolio/)
+[![Live Site](https://img.shields.io/badge/LIVE_SITE-333333?style=for-the-badge)](https://aakritibalachandran.github.io/Portfolio_Website/)
 [![Resume](https://img.shields.io/badge/RESUME-VIEW-555555?style=for-the-badge)](./assets/Aakriti_Resume.pdf)
 [![Download PDF](https://img.shields.io/badge/DOWNLOAD-PDF-D97706?style=for-the-badge)](./assets/Aakriti_Resume.pdf)
 [![Email](https://img.shields.io/badge/EMAIL-aakriti.9703%40gmail.com-1A73E8?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aakriti.9703@gmail.com)
@@ -26,8 +26,9 @@
 
 <br>
 
-> **Live site URL above is a placeholder** — update it once this repo is deployed
-> to GitHub Pages (see [Deployment](#deployment)).
+> **Live site URL above assumes GitHub Pages is enabled for this repo**
+> (`Portfolio_Website`). If it 404s, go to **Settings → Pages** in this repo and
+> confirm the source branch is set — see [Deployment](#deployment).
 
 ---
 
@@ -184,7 +185,7 @@ or B) is recommended for the most reliable experience.
 This project is designed to deploy to **GitHub Pages** with no configuration:
 
 1. Push this repository's contents to the `main` branch of a GitHub repo
-   (e.g. `aakriti-portfolio`).
+   (this repo is named `Portfolio_Website`).
 2. In the repo, go to **Settings → Pages**.
 3. Under **Build and deployment → Source**, select **Deploy from a branch**.
 4. Set **Branch** to `main` and the folder to `/ (root)`, then **Save**.
