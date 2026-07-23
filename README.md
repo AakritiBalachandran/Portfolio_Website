@@ -1,13 +1,51 @@
-# Aakriti — Personal Portfolio
+<div align="center">
 
-A personal portfolio site for **Aakriti**, a finance professional (MBA) working across
-data analytics, fraud/AML analytics, and financial risk. The site is built as a
-dependency-free static site — plain HTML, CSS, and JavaScript — styled around a
-finance/ledger-inspired visual language (charcoal, gold, and burnt-orange, with
-exhibit-style project cards) rather than a generic developer-portfolio template.
+# Aakriti
 
-**Live site:** _add your GitHub Pages URL here once deployed — see [Deployment](#deployment)_
-**Résumé:** [`assets/Aakriti_Resume.pdf`](./assets/Aakriti_Resume.pdf)
+### Data Analytics · Financial Risk · Fraud & AML Analytics · Business Intelligence
+
+*Reading the story hidden inside a million rows.*
+
+<br>
+
+[![Live Site](https://img.shields.io/badge/LIVE_SITE-333333?style=for-the-badge)](https://aakritibalachandran.github.io/aakriti-portfolio/)
+[![Resume](https://img.shields.io/badge/RESUME-VIEW-555555?style=for-the-badge)](./assets/Aakriti_Resume.pdf)
+[![Download PDF](https://img.shields.io/badge/DOWNLOAD-PDF-D97706?style=for-the-badge)](./assets/Aakriti_Resume.pdf)
+[![Email](https://img.shields.io/badge/EMAIL-aakriti.9703%40gmail.com-1A73E8?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aakriti.9703@gmail.com)
+
+<br>
+
+![SQL](https://img.shields.io/badge/SQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
+</div>
+
+<br>
+
+> **Live site URL above is a placeholder** — update it once this repo is deployed
+> to GitHub Pages (see [Deployment](#deployment)).
+
+---
+
+## About
+
+Finance professional (MBA in Finance & Analytics) working across data analytics,
+fraud/AML analytics, and financial risk — building SQL- and Python-based
+analytical models on 1M+ row datasets, running time-series and volatility
+analysis on 15+ years of market data, and designing dashboards in Excel,
+Tableau, and Power BI that translate data into decisions.
+
+This repository hosts the source for that portfolio — a dependency-free static
+site (plain HTML/CSS/JS, no build step) styled around a finance/ledger visual
+language rather than a generic developer-portfolio template. It's built to
+showcase work that can be interrogated, not just admired: real SQL queries you
+can click open and read in full, real dashboard screenshots with written
+interpretations of what they actually show, and a real résumé you can view or
+download without leaving the page.
 
 ---
 
@@ -31,7 +69,7 @@ exhibit-style project cards) rather than a generic developer-portfolio template.
 
 ## Overview
 
-This repository contains the full source for a single-page portfolio site covering:
+The site covers:
 
 - **Profile** — a summary of finance and analytics experience across fraud/AML,
   market risk, and BI dashboarding.
@@ -157,6 +195,7 @@ This project is designed to deploy to **GitHub Pages** with no configuration:
 6. *(Optional)* To make this your primary GitHub Pages profile site instead of a
    project page, name the repository `<your-username>.github.io` — it will then
    be served at `https://<your-username>.github.io/`.
+7. Update the **LIVE SITE** badge at the top of this README with the real URL.
 
 No CI/CD, environment variables, or secrets are required.
 
@@ -212,8 +251,11 @@ learning purposes.
 
 ## Contact
 
-**Aakriti**
-📧 [aakriti.9703@gmail.com](mailto:aakriti.9703@gmail.com)
-📱 +91 82106 46078
-🔗 [GitHub — AakritiBalachandran](https://github.com/AakritiBalachandran)
-📊 [Tableau Public — Fraud Intelligence Dashboard](https://public.tableau.com/app/profile/aakriti.balachandran/viz/FRAUD_ANALYTICS/Fraud_Intelligence_Dashboard#1)
+<div align="center">
+
+[![Email](https://img.shields.io/badge/Email-aakriti.9703%40gmail.com-1A73E8?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aakriti.9703@gmail.com)
+[![Phone](https://img.shields.io/badge/Phone-%2B91_82106_46078-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+918210646078)
+[![GitHub](https://img.shields.io/badge/GitHub-AakritiBalachandran-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AakritiBalachandran)
+[![Tableau](https://img.shields.io/badge/Tableau_Public-Fraud_Intelligence_Dashboard-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/aakriti.balachandran/viz/FRAUD_ANALYTICS/Fraud_Intelligence_Dashboard#1)
+
+</div>
