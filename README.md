@@ -28,11 +28,11 @@
 
 > **Live site URL above assumes GitHub Pages is enabled for this repo**
 > (`Portfolio_Website`). If it 404s, go to **Settings → Pages** in this repo and
-> confirm the source branch is set — see [Deployment](#deployment).
+> confirm the source branch is set — see [Deployment](#-deployment).
 
 ---
 
-## About
+## 📌 About
 
 Finance professional (MBA in Finance & Analytics) working across data analytics,
 fraud/AML analytics, and financial risk — building SQL- and Python-based
@@ -50,25 +50,25 @@ download without leaving the page.
 
 ---
 
-## Table of Contents
+## 🧭 Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Deployment](#deployment)
-- [Customisation Guide](#customisation-guide)
-- [Content Sourcing](#content-sourcing)
-- [Accessibility & Performance](#accessibility--performance)
-- [Browser Support](#browser-support)
-- [Roadmap](#roadmap)
-- [License](#license)
-- [Contact](#contact)
+- [Overview](#-overview)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Deployment](#-deployment)
+- [Customisation Guide](#-customisation-guide)
+- [Content Sourcing](#-content-sourcing)
+- [Accessibility & Performance](#-accessibility--performance)
+- [Browser Support](#-browser-support)
+- [Roadmap](#-roadmap)
+- [License](#-license)
+- [Contact](#-contact)
 
 ---
 
-## Overview
+## 🔎 Overview
 
 The site covers:
 
@@ -88,7 +88,7 @@ The site covers:
 - **Credentials** — education, certifications, and published research.
 - **Contact** — résumé (view/download), email, phone, GitHub, and Tableau Public.
 
-## Features
+## ✨ Features
 
 - **Zero build step.** No `npm install`, no bundler, no framework — open
   `index.html` and it runs.
@@ -105,7 +105,7 @@ The site covers:
 - **Downloadable résumé** embedded directly in the site (view and download,
   available from both the hero section and the Contact section).
 
-## Tech Stack
+## 🧰 Tech Stack
 
 | Layer      | Choice                                                                 |
 |------------|-------------------------------------------------------------------------|
@@ -117,7 +117,7 @@ The site covers:
 
 No package manager, no build pipeline, no external JS dependencies at runtime.
 
-## Project Structure
+## 🗂 Project Structure
 
 ```
 portfolio/
@@ -144,14 +144,14 @@ pulled at runtime directly from their respective GitHub repositories
 [Movie_Rental_Analytics](https://github.com/AakritiBalachandran/Movie_Rental_Analytics)),
 so those two stay in sync automatically if the source repos are updated.
 
-## Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
+### ✅ Prerequisites
 
 Just a modern web browser. No Node.js, no package manager, and no build tools
 are required to run or edit this site.
 
-### Run locally
+### 💻 Run locally
 
 **Option A — VS Code + Live Server (recommended)**
 
@@ -180,7 +180,7 @@ Double-click `index.html`. Everything works except that some browsers restrict
 `fetch`-style asset loading from the `file://` protocol — a local server (Option A
 or B) is recommended for the most reliable experience.
 
-## Deployment
+## 🌐 Deployment
 
 This project is designed to deploy to **GitHub Pages** with no configuration:
 
@@ -200,7 +200,7 @@ This project is designed to deploy to **GitHub Pages** with no configuration:
 
 No CI/CD, environment variables, or secrets are required.
 
-## Customisation Guide
+## 🎨 Customisation Guide
 
 | What you want to change            | Where to look                                                                 |
 |-------------------------------------|--------------------------------------------------------------------------------|
@@ -209,9 +209,9 @@ No CI/CD, environment variables, or secrets are required.
 | SQL query content                   | `sql-data.js` — one entry per query, keyed `q1`–`q10`                          |
 | Scroll animations / ticker speed    | `script.js` (`IntersectionObserver` reveal logic) and `@keyframes ticker-scroll` in `style.css` |
 | Résumé file                         | Replace `assets/Aakriti_Resume.pdf` — filename must stay the same, or update the `href` references in `index.html` |
-| Dashboard screenshots               | `assets/Tableau_screenshots/` for NexaBank; Northwind and Movie Rental screenshots are linked directly from GitHub (see [Project Structure](#project-structure)) |
+| Dashboard screenshots               | `assets/Tableau_screenshots/` for NexaBank; Northwind and Movie Rental screenshots are linked directly from GitHub (see [Project Structure](#-project-structure)) |
 
-## Content Sourcing
+## 📊 Content Sourcing
 
 All résumé content (roles, dates, metrics, education, certifications) is sourced
 directly from Aakriti's résumé. Project write-ups and screenshot interpretations
@@ -219,7 +219,7 @@ for NexaBank Analytics, Northwind Traders, and Movie Rental Analytics are writte
 from the actual project repositories and dashboard exports — nothing is
 fabricated or placeholder text.
 
-## Accessibility & Performance
+## ♿ Accessibility & Performance
 
 - Semantic landmarks (`header`, `main`, `footer`) and heading hierarchy throughout.
 - All interactive elements (query cards, screenshot exhibits, modals) are keyboard-
@@ -229,28 +229,28 @@ fabricated or placeholder text.
 - No external JS frameworks or runtime dependencies — fast first paint, minimal
   network requests beyond Google Fonts and the linked project screenshots.
 
-## Browser Support
+## 🧪 Browser Support
 
 Tested on current versions of Chrome, Edge, Safari, and Firefox, desktop and
 mobile. Uses standard modern CSS (Grid, Flexbox, custom properties) and ES6+
 JavaScript with no transpilation — an evergreen browser from the last ~3 years
 is expected.
 
-## Roadmap
+## 🧩 Roadmap
 
 - [ ] Add screenshots for any future projects as they're published
 - [ ] Optional: add a lightweight contact form (currently `mailto:` only)
 - [ ] Optional: swap Google Fonts CDN for self-hosted fonts if avoiding third-party
       requests becomes a priority
 
-## License
+## 📄 License
 
 This repository contains personal portfolio content (résumé data, project
 descriptions, and images) and is not intended for reuse as a template without
 permission. The code structure (HTML/CSS/JS patterns) may be referenced for
 learning purposes.
 
-## Contact
+## 📬 Contact
 
 <div align="center">
 
