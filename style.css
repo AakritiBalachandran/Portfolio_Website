@@ -11,6 +11,10 @@
   --gold-bright:   #eabb52;
   --orange:        #df6423;
   --orange-deep:   #b3450f;
+  --rose:          #c1615a;
+  --copper:        #c1652e;
+  --bronze:        #a9803f;
+  --amber:         #d9a441;
 
   --cream:         #f3ecdb;
   --cream-dim:     #d9cdb1;
@@ -37,9 +41,18 @@ html{ scroll-behavior:smooth; }
 body{
   margin:0;
   background:
-    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(223,100,35,0.10), transparent 60%),
-    radial-gradient(ellipse 700px 500px at 100% 10%, rgba(201,151,44,0.08), transparent 55%),
+    radial-gradient(ellipse 900px 500px at 15% 6%,  rgba(223,100,35,0.16), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 95% 11%, rgba(201,151,44,0.13), transparent 55%),
+    radial-gradient(ellipse 800px 480px at 88% 21%, rgba(217,164,65,0.13), transparent 55%),
+    radial-gradient(ellipse 750px 520px at 4% 30%,  rgba(193,101,46,0.13), transparent 55%),
+    radial-gradient(ellipse 850px 560px at 92% 40%, rgba(193,97,90,0.12), transparent 55%),
+    radial-gradient(ellipse 900px 560px at 6% 50%,  rgba(223,100,35,0.12), transparent 55%),
+    radial-gradient(ellipse 820px 540px at 90% 60%, rgba(217,164,65,0.12), transparent 55%),
+    radial-gradient(ellipse 800px 520px at 90% 72%, rgba(169,128,63,0.14), transparent 55%),
+    radial-gradient(ellipse 750px 520px at 8% 85%,  rgba(217,164,65,0.13), transparent 55%),
+    radial-gradient(ellipse 900px 600px at 82% 94%, rgba(193,97,90,0.14), transparent 55%),
     var(--bg);
+  background-attachment: scroll;
   color:var(--cream);
   font-family:var(--font-body);
   line-height:1.55;
@@ -152,10 +165,20 @@ p{ margin:0; }
    ============================================================ */
 .hero{
   position:relative;
-  padding:clamp(64px,10vw,120px) clamp(20px,5vw,64px) clamp(48px,8vw,90px);
+  padding:clamp(56px,9vw,100px) clamp(24px,5vw,64px);
   max-width:var(--container);
-  margin:0 auto;
+  margin:34px auto;
   overflow:hidden;
+  border-radius:22px;
+  border:1px solid transparent;
+  background:
+    linear-gradient(175deg, rgba(40,31,18,0.58), rgba(18,13,8,0.58)) padding-box,
+    linear-gradient(135deg, var(--orange), var(--gold)) border-box;
+  backdrop-filter: blur(24px) saturate(1.25);
+  -webkit-backdrop-filter: blur(24px) saturate(1.25);
+  box-shadow:
+    0 30px 70px -40px rgba(0,0,0,0.75),
+    inset 0 1px 0 rgba(255,255,255,0.05);
 }
 .hero-grain{
   position:absolute; inset:0;
@@ -193,7 +216,10 @@ p{ margin:0; }
 .hero-title em{
   font-style:italic;
   font-weight:500;
-  color:var(--gold-bright);
+  background:linear-gradient(100deg, var(--gold-bright), var(--orange) 60%, var(--rose));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
 }
 
 .hero-sub{
@@ -332,11 +358,23 @@ p{ margin:0; }
    ============================================================ */
 .section{
   max-width:var(--container);
-  margin:0 auto;
-  padding:clamp(60px,8vw,100px) clamp(20px,5vw,64px);
-  border-top:1px solid var(--line);
+  margin:34px auto;
+  padding:clamp(44px,6vw,88px) clamp(24px,5vw,64px);
+  position:relative;
+  border-radius:22px;
+  border:1px solid transparent;
+  background:
+    linear-gradient(175deg, rgba(40,31,18,0.58), rgba(18,13,8,0.58)) padding-box,
+    linear-gradient(135deg, var(--gold), var(--orange)) border-box;
+  backdrop-filter: blur(24px) saturate(1.25);
+  -webkit-backdrop-filter: blur(24px) saturate(1.25);
+  box-shadow:
+    0 30px 70px -40px rgba(0,0,0,0.75),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  overflow:hidden;
 }
-.section-head{ margin-bottom:clamp(36px,5vw,56px); }
+.section:first-of-type{ margin-top:34px; }
+.section-head{ margin-bottom:clamp(36px,5vw,56px); position:relative; }
 .section-kicker{
   font-family:var(--font-mono);
   font-size:0.72rem;
@@ -805,7 +843,36 @@ p{ margin:0; }
 /* ============================================================
    CONTACT
    ============================================================ */
-.contact-section{ border-top:1px solid var(--line); }
+.about{
+  background:
+    linear-gradient(175deg, rgba(40,31,18,0.58), rgba(18,13,8,0.58)) padding-box,
+    linear-gradient(135deg, var(--gold), var(--amber)) border-box;
+}
+.ledger-section{
+  background:
+    linear-gradient(175deg, rgba(40,31,18,0.58), rgba(18,13,8,0.58)) padding-box,
+    linear-gradient(135deg, var(--copper), var(--gold)) border-box;
+}
+.cases-section{
+  background:
+    linear-gradient(175deg, rgba(40,31,18,0.58), rgba(18,13,8,0.58)) padding-box,
+    linear-gradient(135deg, var(--orange), var(--rose)) border-box;
+}
+.experience-section{
+  background:
+    linear-gradient(175deg, rgba(40,31,18,0.58), rgba(18,13,8,0.58)) padding-box,
+    linear-gradient(135deg, var(--bronze), var(--gold)) border-box;
+}
+.credentials-section{
+  background:
+    linear-gradient(175deg, rgba(40,31,18,0.58), rgba(18,13,8,0.58)) padding-box,
+    linear-gradient(135deg, var(--amber), var(--orange)) border-box;
+}
+.contact-section{
+  background:
+    linear-gradient(175deg, rgba(40,31,18,0.58), rgba(18,13,8,0.58)) padding-box,
+    linear-gradient(135deg, var(--gold), var(--orange), var(--rose)) border-box;
+}
 .contact-inner{ text-align:left; }
 .contact-inner h2{
   font-size:clamp(2rem,4.6vw,3.2rem);
@@ -1100,4 +1167,136 @@ p{ margin:0; }
   line-height:1.6;
   color:#e7dcc4;
   white-space:pre;
+}
+
+/* ============================================================
+   DISTINCT PER-SECTION HEADER TREATMENTS
+   ============================================================ */
+
+/* --- About: editorial pull-quote --- */
+.head-quote{ padding-left:0.2em; }
+.head-quote::before{
+  content:"\201C";
+  position:absolute;
+  top:-0.5em; left:-0.06em;
+  font-family:var(--font-display);
+  font-size:7rem;
+  line-height:1;
+  font-weight:600;
+  background:linear-gradient(160deg, var(--gold-bright), var(--amber));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  opacity:0.35;
+  pointer-events:none;
+  z-index:0;
+}
+.head-quote .section-kicker,
+.head-quote h2{ position:relative; z-index:1; }
+.head-quote h2{ margin-left:1.6rem; }
+
+/* --- Skillset Ledger: tabbed folder edge --- */
+.head-tab{ padding-top:6px; }
+.head-tab .section-kicker{
+  display:inline-block;
+  background:linear-gradient(135deg, rgba(193,101,46,0.22), rgba(201,151,44,0.14));
+  border:1px solid var(--line-strong);
+  border-bottom:none;
+  border-radius:6px 6px 0 0;
+  padding:8px 16px 14px;
+  margin-bottom:-1px;
+}
+.head-tab h2{
+  border-top:1px solid var(--line-strong);
+  padding-top:16px;
+}
+
+/* --- Case Files: rotated stamp badge --- */
+.head-stamp{ padding-right:120px; }
+.stamp-badge{
+  position:absolute;
+  top:-6px; right:0;
+  width:92px;
+  text-align:center;
+  font-family:var(--font-mono);
+  font-size:0.66rem;
+  line-height:1.3;
+  text-transform:uppercase;
+  letter-spacing:0.04em;
+  color:var(--rose);
+  border:2px solid var(--rose);
+  border-radius:50%;
+  padding:14px 6px;
+  transform:rotate(-9deg);
+  opacity:0.75;
+  pointer-events:none;
+}
+
+/* --- Experience: anchored to the timeline --- */
+.head-timeline{
+  padding-left:26px;
+  border-left:2px solid var(--bronze);
+}
+.head-timeline::before{
+  content:"";
+  position:absolute;
+  left:-7px; top:4px;
+  width:12px; height:12px;
+  background:var(--gold-bright);
+  transform:rotate(45deg);
+  border:2px solid var(--bg-panel);
+  box-shadow:0 0 0 2px var(--bronze);
+}
+
+/* --- Credentials: accreditation seal --- */
+.head-seal{ padding-left:104px; min-height:88px; display:flex; flex-direction:column; justify-content:center; }
+.head-seal::before{
+  content:"";
+  position:absolute;
+  left:0; top:50%;
+  transform:translateY(-50%);
+  width:80px; height:80px;
+  border-radius:50%;
+  border:1.5px dashed var(--amber);
+  opacity:0.55;
+  pointer-events:none;
+}
+.head-seal::after{
+  content:"\2726";
+  position:absolute;
+  left:26px; top:50%;
+  transform:translateY(-50%);
+  font-size:1.6rem;
+  color:var(--amber);
+  opacity:0.7;
+  pointer-events:none;
+}
+
+/* --- Contact: oversized watermark glyph --- */
+.head-contact{ position:relative; }
+.head-contact::before{
+  content:"@";
+  position:absolute;
+  top:-0.35em; right:-0.05em;
+  font-family:var(--font-display);
+  font-size:9rem;
+  font-weight:600;
+  background:linear-gradient(160deg, var(--gold-bright), var(--orange), var(--rose));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  opacity:0.18;
+  pointer-events:none;
+  z-index:0;
+}
+.head-contact > *{ position:relative; z-index:1; }
+
+@media (max-width:700px){
+  .head-quote::before{ font-size:5rem; }
+  .head-quote h2{ margin-left:1rem; }
+  .head-stamp{ padding-right:0; }
+  .stamp-badge{ position:static; display:inline-block; margin-top:14px; transform:rotate(-4deg); }
+  .head-seal{ padding-left:0; }
+  .head-seal::before, .head-seal::after{ display:none; }
+  .head-contact::before{ font-size:5.5rem; }
 }
