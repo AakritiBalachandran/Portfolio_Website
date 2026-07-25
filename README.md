@@ -85,7 +85,7 @@ The site covers:
   - **Movie Rental Analytics — Sakila DVD Rental Store** (Power BI)
   - **Portfolio Optimisation & Market Risk Assessment** (Excel — CAPM, VaR, Monte Carlo)
 - **Experience** — a timeline of internships and full-time roles.
-- **Credentials** — education, certifications, and Research Contribution.
+- **Credentials** — education, certifications, and an acknowledged research contribution.
 - **Contact** — résumé (view/download), email, phone, GitHub, and Tableau Public.
 
 ## ✨ Features

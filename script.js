@@ -10,6 +10,20 @@ if (window.location.hash) {
 }
 window.scrollTo(0, 0);
 
+// Cursor-following glow behind the hero title
+const heroEl = document.querySelector('.hero');
+const heroGlow = document.querySelector('.hero-glow');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (heroEl && heroGlow && !reduceMotion) {
+  heroEl.addEventListener('mousemove', (e) => {
+    const rect = heroEl.getBoundingClientRect();
+    heroGlow.style.left = (e.clientX - rect.left) + 'px';
+    heroGlow.style.top = (e.clientY - rect.top) + 'px';
+  });
+  heroEl.addEventListener('mouseenter', () => heroGlow.classList.add('is-active'));
+  heroEl.addEventListener('mouseleave', () => heroGlow.classList.remove('is-active'));
+}
+
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
