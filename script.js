@@ -69,9 +69,19 @@ const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 const lightboxTitle = document.getElementById('lightbox-title');
 const lightboxText = document.getElementById('lightbox-text');
+const lightboxPrev = document.getElementById('lightbox-prev');
+const lightboxNext = document.getElementById('lightbox-next');
 let lastFocused = null;
+let currentExhibits = [];
+let currentIndex = 0;
 
-function openLightbox(exhibit) {
+function getExhibitGroup(exhibit) {
+  const sheet = exhibit.closest('.exhibit-sheet');
+  return sheet ? Array.from(sheet.querySelectorAll('.exhibit')) : [exhibit];
+}
+
+function renderExhibit() {
+  const exhibit = currentExhibits[currentIndex];
   const img = exhibit.querySelector('img');
   const tag = exhibit.querySelector('.exhibit-tag');
   const text = exhibit.querySelector('figcaption p');
@@ -81,6 +91,28 @@ function openLightbox(exhibit) {
   lightboxImg.alt = img.alt || '';
   lightboxTitle.textContent = tag ? tag.textContent : '';
   lightboxText.textContent = text ? text.textContent : '';
+
+  const multiple = currentExhibits.length > 1;
+  lightboxPrev.hidden = !multiple;
+  lightboxNext.hidden = !multiple;
+}
+
+function showPrevExhibit() {
+  if (!currentExhibits.length) return;
+  currentIndex = (currentIndex - 1 + currentExhibits.length) % currentExhibits.length;
+  renderExhibit();
+}
+
+function showNextExhibit() {
+  if (!currentExhibits.length) return;
+  currentIndex = (currentIndex + 1) % currentExhibits.length;
+  renderExhibit();
+}
+
+function openLightbox(exhibit) {
+  currentExhibits = getExhibitGroup(exhibit);
+  currentIndex = Math.max(0, currentExhibits.indexOf(exhibit));
+  renderExhibit();
 
   lastFocused = document.activeElement;
   lightbox.hidden = false;
@@ -114,8 +146,14 @@ lightbox.querySelectorAll('[data-close]').forEach(el => {
   el.addEventListener('click', closeLightbox);
 });
 
+lightboxPrev.addEventListener('click', showPrevExhibit);
+lightboxNext.addEventListener('click', showNextExhibit);
+
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+  if (lightbox.hidden) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') showPrevExhibit();
+  if (e.key === 'ArrowRight') showNextExhibit();
 });
 
 // SQL code viewer — click a NexaBank investigation title to see its query
